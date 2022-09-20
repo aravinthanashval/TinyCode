@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "TC.Products.RnR.Manager/1.0.0": {
+        "dependencies": {
+          "TC.Products.RnR.Repository": "1.0.0"
+        },
+        "runtime": {
+          "TC.Products.RnR.Manager.dll": {}
+        }
+      },
+      "TC.Products.RnR.Repository/1.0.0": {
+        "runtime": {
+          "TC.Products.RnR.Repository.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "TC.Products.RnR.Manager/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "TC.Products.RnR.Repository/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
