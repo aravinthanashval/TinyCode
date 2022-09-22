@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\aravinthan.anandan\\source\\repos\\TC.Products.RnR\\TinyCode\\TC.Products.RnR.Repository\\TC.Products.RnR.Repository.csproj": {}
+    "D:\\Hackathon\\TC.Products.RnR.Repository\\TC.Products.RnR.Repository.csproj": {}
   },
   "projects": {
-    "C:\\Users\\aravinthan.anandan\\source\\repos\\TC.Products.RnR\\TinyCode\\TC.Products.RnR.Repository\\TC.Products.RnR.Repository.csproj": {
+    "D:\\Hackathon\\TC.Products.RnR.Repository\\TC.Products.RnR.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\aravinthan.anandan\\source\\repos\\TC.Products.RnR\\TinyCode\\TC.Products.RnR.Repository\\TC.Products.RnR.Repository.csproj",
+        "projectUniqueName": "D:\\Hackathon\\TC.Products.RnR.Repository\\TC.Products.RnR.Repository.csproj",
         "projectName": "TC.Products.RnR.Repository",
-        "projectPath": "C:\\Users\\aravinthan.anandan\\source\\repos\\TC.Products.RnR\\TinyCode\\TC.Products.RnR.Repository\\TC.Products.RnR.Repository.csproj",
-        "packagesPath": "C:\\Users\\aravinthan.anandan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\aravinthan.anandan\\source\\repos\\TC.Products.RnR\\TinyCode\\TC.Products.RnR.Repository\\obj\\",
+        "projectPath": "D:\\Hackathon\\TC.Products.RnR.Repository\\TC.Products.RnR.Repository.csproj",
+        "packagesPath": "C:\\Users\\Thanoj.kuchipudi\\.nuget\\packages\\",
+        "outputPath": "D:\\Hackathon\\TC.Products.RnR.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\aravinthan.anandan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Thanoj.kuchipudi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,8 +25,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {},
-          "https://sitecore.myget.org/F/sc-packages/api/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -43,14 +42,23 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.9, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
             "net47",
             "net471",
             "net472",
-            "net48",
-            "net481"
+            "net48"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -59,7 +67,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
         }
       }
     }
