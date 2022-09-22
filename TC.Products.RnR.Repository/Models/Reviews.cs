@@ -19,6 +19,8 @@ namespace TC.Products.RnR.Repository.Models
 
         public string? Review { get; set; }
 
+        public string? ReviewTitle { get; set; }
+
         public string? UserId { get; set; }
 	}
 }

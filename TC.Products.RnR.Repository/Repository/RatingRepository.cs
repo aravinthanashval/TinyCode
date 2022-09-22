@@ -23,6 +23,29 @@ namespace TC.Products.RnR.Repository.Repository
             }
         }
 
+        public ProductRating GetCalculatedProductRatingByProductId(int productId)
+        {
+            var count = _appDBContext.Reviews.Where(x => x.ProductId == productId).Count();
+
+            var result = new ProductRating()
+            {
+                ProductId = productId
+            };
+
+            if (count > 0)
+            {
+                var avgrating = _appDBContext.Reviews.Where(x => x.ProductId == productId).Average(x => x.OverallRating);
+                var p1rating = _appDBContext.Reviews.Where(x => x.ProductId == productId).Average(x => x.Parameter1Rating);
+                var p2rating = _appDBContext.Reviews.Where(x => x.ProductId == productId).Average(x => x.Parameter2Rating);
+
+                result.AverageOverallRating = (int)avgrating;
+                result.AverageParameter1Rating = (int)p1rating;
+                result.AverageParameter2Rating = (int)p2rating;
+            }
+
+            return result;
+        }
+
         public IEnumerable<Reviews> GetReviewsByProductId(int productId)
         {
             try
@@ -35,9 +58,9 @@ namespace TC.Products.RnR.Repository.Repository
             }
         }
 
-        public async Task<Reviews> AddReview(Reviews review)
+        public Reviews AddReview(Reviews review)
         {
-            var obj = await _appDBContext.Reviews.AddAsync(review);
+            var obj = _appDBContext.Reviews.Add(review);
             _appDBContext.SaveChanges();
             return obj.Entity;
         }

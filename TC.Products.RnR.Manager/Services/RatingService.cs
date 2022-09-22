@@ -1,4 +1,5 @@
-﻿using TC.Products.RnR.Repository.Models;
+﻿using TC.Products.RnR.Manager.Models;
+using TC.Products.RnR.Repository.Models;
 using TC.Products.RnR.Repository.Repository;
 
 namespace TC.Products.RnR.Manager.Services
@@ -22,9 +23,18 @@ namespace TC.Products.RnR.Manager.Services
             return _rating.GetReviewsByProductId(productId);
         }
 
-        public async Task<Reviews> AddReview(Reviews review)
+        public ProductRatingReviews GetProductWithRatingAndReviews(int productId)
         {
-            return await _rating.AddReview(review);
+            var result = new ProductRatingReviews();
+            result.ProductReviews = _rating.GetReviewsByProductId(productId);
+            result.ProductRating = _rating.GetCalculatedProductRatingByProductId(productId);
+
+            return result;
+        }
+
+        public Reviews AddReview(Reviews review)
+        {
+            return _rating.AddReview(review);
         }
 
         public void DeleteReview(int reviewId)

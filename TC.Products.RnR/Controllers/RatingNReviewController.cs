@@ -1,4 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
+using TC.Products.RnR.Manager.Models;
 using TC.Products.RnR.Manager.Services;
 using TC.Products.RnR.Repository.Models;
 using TC.Products.RnR.Repository.Repository;
@@ -35,16 +37,28 @@ namespace TC.Products.RnR.Controllers
         }
 
         // GET 
-        [HttpGet("/reviews/{productId}")]
+        [HttpGet("/api/RatingNReview/GetProductReviews/{productId}")]
         public IEnumerable<Reviews> GetProductReviews(int productId)
         {
             return _ratingService.GetReviewsByProductId(productId);
+        }
+
+        // GET 
+        [HttpGet("/api/RatingNReview/GetProductRatingAndReviews/{productId}")]
+        public ProductRatingReviews GetProductReviewsAndReviews(int productId)
+        {
+            return _ratingService.GetProductWithRatingAndReviews(productId);
         }
 
         // POST api/<RatingNReviewController>
         [HttpPost]
         public void Post([FromBody] string value)
         {
+            var review = JsonConvert.DeserializeObject<Reviews>(value);
+            if(review != null)
+            {
+                _ratingService.AddReview(review);
+            }
         }
 
         // PUT api/<RatingNReviewController>/5
@@ -57,6 +71,7 @@ namespace TC.Products.RnR.Controllers
         [HttpDelete("{id}")]
         public void Delete(int id)
         {
+            _ratingService.DeleteReview(id);
         }
     }
 }

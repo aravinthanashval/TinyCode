@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Aqmi01uxQbEiRyVvq0CMwUby2dv5GkFeRZLQIb9JYgWd0ulNxsXdjmrM2iicWQHkwWBfGSE6q1rVZwNoWducVQ==",
+  "dgSpecHash": "k2j/Cvu+qPs68fMjyX4sVbFkPCj6AIxb2TlQTH1q1U8AioObPjWrjelxPSjRCVWF57JZdkE2j3Emkjp/JliIhA==",
   "success": true,
   "projectFilePath": "D:\\Hackathon\\TC.Products.RnR\\TC.Products.RnR.csproj",
   "expectedPackageFiles": [
@@ -32,6 +32,7 @@
     "C:\\Users\\Thanoj.kuchipudi\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
     "C:\\Users\\Thanoj.kuchipudi\\.nuget\\packages\\microsoft.win32.registry\\4.7.0\\microsoft.win32.registry.4.7.0.nupkg.sha512",
     "C:\\Users\\Thanoj.kuchipudi\\.nuget\\packages\\microsoft.win32.systemevents\\4.7.0\\microsoft.win32.systemevents.4.7.0.nupkg.sha512",
+    "C:\\Users\\Thanoj.kuchipudi\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\Thanoj.kuchipudi\\.nuget\\packages\\swashbuckle.aspnetcore\\6.4.0\\swashbuckle.aspnetcore.6.4.0.nupkg.sha512",
     "C:\\Users\\Thanoj.kuchipudi\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.4.0\\swashbuckle.aspnetcore.swagger.6.4.0.nupkg.sha512",
     "C:\\Users\\Thanoj.kuchipudi\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.4.0\\swashbuckle.aspnetcore.swaggergen.6.4.0.nupkg.sha512",

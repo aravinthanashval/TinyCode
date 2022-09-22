@@ -8,7 +8,9 @@ namespace TC.Products.RnR.Repository.Repository
 
         ProductRating GetProductRatingByProductId(int productId);
 
-        Task<Reviews> AddReview(Reviews review);
+        ProductRating GetCalculatedProductRatingByProductId(int productId);
+
+        Reviews AddReview(Reviews review);
 
         void DeleteReview(int reviewId);
     }
