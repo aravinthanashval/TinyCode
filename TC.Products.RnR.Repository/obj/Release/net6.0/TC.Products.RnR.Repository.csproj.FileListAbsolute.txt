@@ -10,3 +10,15 @@ C:\Users\aravinthan.anandan\source\repos\TC.Products.RnR\TC.Products.RnR.Reposit
 C:\Users\aravinthan.anandan\source\repos\TC.Products.RnR\TC.Products.RnR.Repository\obj\Release\net6.0\refint\TC.Products.RnR.Repository.dll
 C:\Users\aravinthan.anandan\source\repos\TC.Products.RnR\TC.Products.RnR.Repository\obj\Release\net6.0\TC.Products.RnR.Repository.pdb
 C:\Users\aravinthan.anandan\source\repos\TC.Products.RnR\TC.Products.RnR.Repository\obj\Release\net6.0\ref\TC.Products.RnR.Repository.dll
+C:\Users\aravinthan.anandan\source\repos\TC.Products.RnR\TinyCode\TC.Products.RnR.Repository\bin\Release\net6.0\TC.Products.RnR.Repository.deps.json
+C:\Users\aravinthan.anandan\source\repos\TC.Products.RnR\TinyCode\TC.Products.RnR.Repository\bin\Release\net6.0\TC.Products.RnR.Repository.dll
+C:\Users\aravinthan.anandan\source\repos\TC.Products.RnR\TinyCode\TC.Products.RnR.Repository\bin\Release\net6.0\TC.Products.RnR.Repository.pdb
+C:\Users\aravinthan.anandan\source\repos\TC.Products.RnR\TinyCode\TC.Products.RnR.Repository\obj\Release\net6.0\TC.Products.RnR.Repository.csproj.AssemblyReference.cache
+C:\Users\aravinthan.anandan\source\repos\TC.Products.RnR\TinyCode\TC.Products.RnR.Repository\obj\Release\net6.0\TC.Products.RnR.Repository.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\aravinthan.anandan\source\repos\TC.Products.RnR\TinyCode\TC.Products.RnR.Repository\obj\Release\net6.0\TC.Products.RnR.Repository.AssemblyInfoInputs.cache
+C:\Users\aravinthan.anandan\source\repos\TC.Products.RnR\TinyCode\TC.Products.RnR.Repository\obj\Release\net6.0\TC.Products.RnR.Repository.AssemblyInfo.cs
+C:\Users\aravinthan.anandan\source\repos\TC.Products.RnR\TinyCode\TC.Products.RnR.Repository\obj\Release\net6.0\TC.Products.RnR.Repository.csproj.CoreCompileInputs.cache
+C:\Users\aravinthan.anandan\source\repos\TC.Products.RnR\TinyCode\TC.Products.RnR.Repository\obj\Release\net6.0\TC.Products.RnR.Repository.dll
+C:\Users\aravinthan.anandan\source\repos\TC.Products.RnR\TinyCode\TC.Products.RnR.Repository\obj\Release\net6.0\refint\TC.Products.RnR.Repository.dll
+C:\Users\aravinthan.anandan\source\repos\TC.Products.RnR\TinyCode\TC.Products.RnR.Repository\obj\Release\net6.0\TC.Products.RnR.Repository.pdb
+C:\Users\aravinthan.anandan\source\repos\TC.Products.RnR\TinyCode\TC.Products.RnR.Repository\obj\Release\net6.0\ref\TC.Products.RnR.Repository.dll

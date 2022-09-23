@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Hackathon\\TC.Products.RnR.Manager\\TC.Products.RnR.Manager.csproj": {}
+    "C:\\Users\\aravinthan.anandan\\source\\repos\\TC.Products.RnR\\TinyCode\\TC.Products.RnR.Manager\\TC.Products.RnR.Manager.csproj": {}
   },
   "projects": {
-    "D:\\Hackathon\\TC.Products.RnR.Manager\\TC.Products.RnR.Manager.csproj": {
+    "C:\\Users\\aravinthan.anandan\\source\\repos\\TC.Products.RnR\\TinyCode\\TC.Products.RnR.Manager\\TC.Products.RnR.Manager.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Hackathon\\TC.Products.RnR.Manager\\TC.Products.RnR.Manager.csproj",
+        "projectUniqueName": "C:\\Users\\aravinthan.anandan\\source\\repos\\TC.Products.RnR\\TinyCode\\TC.Products.RnR.Manager\\TC.Products.RnR.Manager.csproj",
         "projectName": "TC.Products.RnR.Manager",
-        "projectPath": "D:\\Hackathon\\TC.Products.RnR.Manager\\TC.Products.RnR.Manager.csproj",
-        "packagesPath": "C:\\Users\\Thanoj.kuchipudi\\.nuget\\packages\\",
-        "outputPath": "D:\\Hackathon\\TC.Products.RnR.Manager\\obj\\",
+        "projectPath": "C:\\Users\\aravinthan.anandan\\source\\repos\\TC.Products.RnR\\TinyCode\\TC.Products.RnR.Manager\\TC.Products.RnR.Manager.csproj",
+        "packagesPath": "C:\\Users\\aravinthan.anandan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aravinthan.anandan\\source\\repos\\TC.Products.RnR\\TinyCode\\TC.Products.RnR.Manager\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Thanoj.kuchipudi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\aravinthan.anandan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,14 +25,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://sitecore.myget.org/F/sc-packages/api/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "D:\\Hackathon\\TC.Products.RnR.Repository\\TC.Products.RnR.Repository.csproj": {
-                "projectPath": "D:\\Hackathon\\TC.Products.RnR.Repository\\TC.Products.RnR.Repository.csproj"
+              "C:\\Users\\aravinthan.anandan\\source\\repos\\TC.Products.RnR\\TinyCode\\TC.Products.RnR.Repository\\TC.Products.RnR.Repository.csproj": {
+                "projectPath": "C:\\Users\\aravinthan.anandan\\source\\repos\\TC.Products.RnR\\TinyCode\\TC.Products.RnR.Repository\\TC.Products.RnR.Repository.csproj"
               }
             }
           }
@@ -52,7 +53,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -61,24 +63,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Hackathon\\TC.Products.RnR.Repository\\TC.Products.RnR.Repository.csproj": {
+    "C:\\Users\\aravinthan.anandan\\source\\repos\\TC.Products.RnR\\TinyCode\\TC.Products.RnR.Repository\\TC.Products.RnR.Repository.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Hackathon\\TC.Products.RnR.Repository\\TC.Products.RnR.Repository.csproj",
+        "projectUniqueName": "C:\\Users\\aravinthan.anandan\\source\\repos\\TC.Products.RnR\\TinyCode\\TC.Products.RnR.Repository\\TC.Products.RnR.Repository.csproj",
         "projectName": "TC.Products.RnR.Repository",
-        "projectPath": "D:\\Hackathon\\TC.Products.RnR.Repository\\TC.Products.RnR.Repository.csproj",
-        "packagesPath": "C:\\Users\\Thanoj.kuchipudi\\.nuget\\packages\\",
-        "outputPath": "D:\\Hackathon\\TC.Products.RnR.Repository\\obj\\",
+        "projectPath": "C:\\Users\\aravinthan.anandan\\source\\repos\\TC.Products.RnR\\TinyCode\\TC.Products.RnR.Repository\\TC.Products.RnR.Repository.csproj",
+        "packagesPath": "C:\\Users\\aravinthan.anandan\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\aravinthan.anandan\\source\\repos\\TC.Products.RnR\\TinyCode\\TC.Products.RnR.Repository\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\Thanoj.kuchipudi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\aravinthan.anandan\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -86,7 +88,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://api.nuget.org/v3/index.json": {}
+          "https://api.nuget.org/v3/index.json": {},
+          "https://sitecore.myget.org/F/sc-packages/api/v3/index.json": {}
         },
         "frameworks": {
           "net6.0": {
@@ -119,7 +122,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -128,7 +132,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.203\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.401\\RuntimeIdentifierGraph.json"
         }
       }
     }

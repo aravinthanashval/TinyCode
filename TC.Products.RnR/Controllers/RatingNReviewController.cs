@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
+using System.Text;
 using TC.Products.RnR.Manager.Models;
 using TC.Products.RnR.Manager.Services;
 using TC.Products.RnR.Repository.Models;
@@ -55,8 +56,22 @@ namespace TC.Products.RnR.Controllers
         public void Post([FromBody] string value)
         {
             var review = JsonConvert.DeserializeObject<Reviews>(value);
-            if(review != null)
+            if (review != null)
             {
+
+
+                string MailingListID = "7ff30dc9-ea2e-41ec-bad9-2476f3861417";
+                string apiKey = "868563dd-a51f-412e-ab0d-b295ead11c6b";
+                string postUrl = "https://api.moosend.com/v3/subscribers/{0}/subscribe.{1}?apikey={2}";
+                string format = "json";
+                var url = string.Format(postUrl, MailingListID, format, apiKey);
+                using var client = new HttpClient();
+                var newcontact = new { Age = "27", Name = "john123", Email = "validateval@mailinator.com", HasExternalDoubleOptIn = false, CustomFields = new List<string>() { "Country=US", "Rating=" + review.OverallRating + "" } };
+
+                var jsonContactInfo = JsonConvert.SerializeObject(newcontact);
+                var data = new StringContent(jsonContactInfo, Encoding.UTF8, "application/json");
+                var response = client.PostAsync(url, data).Result;
+
                 _ratingService.AddReview(review);
             }
         }

@@ -1,0 +1,20 @@
+# General
+.vscode
+node_modules
+nbproject
+*.sublime-*
+*.trx
+*.suo
+*.cache
+*.sln.*
+*.scproj.user
+*.vsmdi
+*.orig
+*~
+*.diff
+*.patch
+*.pdb
+*.log
+Desktop.ini
+Thumbs.db
+~$*.docx

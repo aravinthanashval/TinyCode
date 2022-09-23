@@ -52,7 +52,7 @@
         }
       }
     },
-    "/api/RatingNReview/{id}": {
+    "/api/RatingNReview/{productId}": {
       "get": {
         "tags": [
           "RatingNReview"
@@ -65,7 +65,7 @@
         "parameters": [
           {
             "in": "path",
-            "name": "id",
+            "name": "productId",
             "required": true,
             "type": "integer",
             "format": "int32"
@@ -75,11 +75,74 @@
           "200": {
             "description": "Success",
             "schema": {
-              "type": "string"
+              "$ref": "#/definitions/ProductRating"
             }
           }
         }
-      },
+      }
+    },
+    "/api/RatingNReview/GetProductReviews/{productId}": {
+      "get": {
+        "tags": [
+          "RatingNReview"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "productId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Reviews"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/RatingNReview/GetProductRatingAndReviews/{productId}": {
+      "get": {
+        "tags": [
+          "RatingNReview"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "productId",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success",
+            "schema": {
+              "$ref": "#/definitions/ProductRatingReviews"
+            }
+          }
+        }
+      }
+    },
+    "/api/RatingNReview/{id}": {
       "put": {
         "tags": [
           "RatingNReview"
@@ -157,6 +220,75 @@
     }
   },
   "definitions": {
+    "ProductRating": {
+      "type": "object",
+      "properties": {
+        "productId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "averageOverallRating": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "averageParameter1Rating": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "averageParameter2Rating": {
+          "format": "int32",
+          "type": "integer"
+        }
+      }
+    },
+    "ProductRatingReviews": {
+      "type": "object",
+      "properties": {
+        "productRating": {
+          "$ref": "#/definitions/ProductRating"
+        },
+        "productReviews": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Reviews"
+          }
+        }
+      }
+    },
+    "Reviews": {
+      "type": "object",
+      "properties": {
+        "reviewId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "productId": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "overallRating": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "parameter1Rating": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "parameter2Rating": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "review": {
+          "type": "string"
+        },
+        "reviewTitle": {
+          "type": "string"
+        },
+        "userId": {
+          "type": "string"
+        }
+      }
+    },
     "WeatherForecast": {
       "type": "object",
       "properties": {
